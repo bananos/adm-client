@@ -26,7 +26,7 @@ Sample usage
     # Error handling
     if 'errors' in response:
         for reg_id, reason in response['errors'].items():
-            if error is 'InvalidRegistrationId':
+            if reason is 'InvalidRegistrationId':
                 # Remove reg_ids from database
                 pass
 
