@@ -1,0 +1,6 @@
+LICENSE
+README.rst
+setup.py
+admclient/__init__.py
+admclient/adm.py
+admclient/test.py
