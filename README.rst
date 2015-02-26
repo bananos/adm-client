@@ -11,7 +11,9 @@ Requirements
 Usage
 -----
 
-Sample usage::
+Sample usage
+
+.. code:: python
 
     from admclient import ADM
 
@@ -36,7 +38,7 @@ Sample usage::
 Installation
 ------------
 
-::
+.. code:: bash
 
     pip install https://github.com/bananos/adm-client/archive/master.zip
 
