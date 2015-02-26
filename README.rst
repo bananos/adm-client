@@ -36,6 +36,8 @@ Sample usage::
 Installation
 ------------
 
+::
+
     pip install https://github.com/bananos/adm-client/archive/master.zip
 
 
