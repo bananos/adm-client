@@ -15,10 +15,13 @@ Sample usage
 
 .. code:: python
 
-    from admclient import ADM
+    from admclient import ADM, flatten
 
     client = ADM(client_id, client_secret)
-    response client.send(registration_id, {'examplekey': {'key1': 'value1'}})
+    # see this http://stackoverflow.com/questions/11378004/with-android-gcm-can-you-use-a-deep-json-data-field
+    # on why we need to flatten nested JSON structures
+    payload = flatten({'examplekey': {'key1': 'value1'}})
+    response = client.send(registration_id, payload)
 
     # Error handling
     if 'errors' in response:

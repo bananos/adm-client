@@ -33,7 +33,11 @@ class ADMAuthenticationException(Exception):
 
 def flatten(d, parent_key=''):
     """ The data must be in the form of JSON-formatted key/value pairs;
-        both keys and values MUST be String values. """
+        both keys and values MUST be String values.
+
+        For more details see this:
+        http://stackoverflow.com/questions/11378004/with-android-gcm-can-you-use-a-deep-json-data-field
+    """
     items = []
     for k, v in d.items():
         new_key = parent_key + '_' + k if parent_key else k
@@ -71,7 +75,7 @@ class ADM(object):
             'X-Amzn-Accept-Type': 'com.amazon.device.messaging.ADMSendResult@1.0'
         }
 
-        body = json.dumps({'data': flatten(data)})
+        body = json.dumps({'data': data})
         result = collections.defaultdict(dict)
         try:
             response = requests.post(self.url_message.format(registration_id),
