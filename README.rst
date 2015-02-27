@@ -4,7 +4,7 @@ Python client for `Amazon Device Messaging (ADM) <https://developer.amazon.com/p
 
 Requirements
 ------------
-
+- `pycurl2 <https://github.com/Lispython/pycurl/>`_ - a more modern PyCURL fork
 - `human_curl <https://pypi.python.org/pypi/human_curl/>`_ - Simple cURL wrapper for Humans
 
 
@@ -43,6 +43,8 @@ Installation
 
 .. code:: bash
 
+    pip install https://github.com/Lispython/pycurl/archive/master.zip
+    pip install https://github.com/Lispython/human_curl/archive/master.zip
     pip install https://github.com/bananos/adm-client/archive/master.zip
 
 
