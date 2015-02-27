@@ -14,7 +14,7 @@ setup(
     packages=['admclient'],
     license="Apache 2.0",
     keywords='adm push notification amazon device messaging android',
-    install_requires=['https://github.com/Lispython/pycurl/archive/master.zip',
+    dependency_links=['https://github.com/Lispython/pycurl/archive/master.zip',
                       'https://github.com/Lispython/human_curl/archive/master.zip'],
     #install_requires=['human_curl'],
     classifiers = [ 'Development Status :: 4 - Beta',
